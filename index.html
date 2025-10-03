@@ -89,12 +89,50 @@
   <main class="main-bg">
     <section class="main-category-plants-and-carts-area">
       <div class="py-10 lg:py-30">
-        <div class="items-center text-center mb-5">
+        
+        <div class="section-title items-center text-center mb-5">
           <h2 class="font-bold text-2xl ">
             Choose Your Trees
           </h2>
         </div>
+        <!-- section-title end -->
+        
         <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center gap-6">       
+          <div class="w-full lg:w-3/4 flex flex-col md:flex-row gap-6">
+            
+            <div class="w-full md:w-[20%]">
+              <h2 class="font-bold text-lg mb-4 text-gray-800">Categories</h2>
+              <ul id="cats-wrap" class="space-y-2 text-black">
+                <!-- category items goes here by js  -->
+              </ul>
+            </div>
+            
+            <!-- plants-wrap -->
+            <div id="plants-wrap" class="w-full md:w-[80%] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              <!-- single plants goes here by js  -->
+            </div>
+          
+          </div>
+          
+          
+          <div class="bg-white p-3 rounded-xl w-full md:w-[20%]">
+            <!-- cart-itmes  -->
+            <h1 class="font-bold">Your Cart</h1>
+            <div id="cart-items" class="mt-4 space-y-2">
+              <!-- cart-itmes goes here by js -->
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold mt-3">Total: </h3>
+              <span id="cart-total"><i class="fa-solid fa-bangladeshi-taka-sign"></i>0</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
+        <!-- <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center gap-6">       
           <div class="w-full lg:w-3/4 flex flex-col md:flex-row gap-6">
             <div class="w-full md:w-1/4">
               <h2 class="font-bold text-lg mb-4 text-gray-800">Categories</h2>
@@ -102,12 +140,12 @@
                 
               </ul>
             </div>
-            <!-- Plants -->
+            
             <div id="plants-wrap" class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             </div>
           </div>
           
-          <!-- Cart -->
+          
           <div class="bg-white p-3 rounded-xl w-full lg:w-1/4">
             <h1 class="font-bold">Your Cart</h1>
             <div id="cart-items" class="mt-4 space-y-2">
@@ -118,7 +156,14 @@
               <span id="cart-total"><i class="fa-solid fa-bangladeshi-taka-sign"></i>0</span>
             </div>
           </div>
-        </div>
+        </div> -->
+      
+      
+      
+      
+      
+      
+      
       </div>
 
       <div class="about-the-campaign-area container mx-auto">
