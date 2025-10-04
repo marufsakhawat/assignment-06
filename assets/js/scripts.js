@@ -21,14 +21,16 @@ function renderPlants(plants) {
     }
 
     // Show up to 9 plants
-    plants.slice(0, 9).forEach(plant => {
+    plants.slice(0, 3).forEach(plant => {
         
         const card = document.createElement('div');
         card.className = "w-full bg-white p-3 rounded-md shadow-md flex flex-col";
 
         card.innerHTML = `
-        <img class="w-full h-44 rounded-t-lg" src="${plant.image}" alt="${plant.name}">
-        <div class="p-1 flex-1 flex flex-col">
+        <div class="image-wrap w-[100%] h-45 overflow-hidden">
+            <img class="w-[100%] h-[auto] rounded-t-lg" src="${plant.image}" alt="${plant.name}">
+        </div>        
+        <div class="p-1 flex flex-col">
           <h3 class="font-bold text-lg mt-2 cursor-pointer text-green-800" data-id="${plant.id}">${plant.name}</h3>
           <p class="text-gray-500 text-sm mt-2 flex-1">${plant.description.slice(0, 8)}...</p>
           <div class="mt-3 flex justify-between items-center">
