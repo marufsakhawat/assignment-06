@@ -21,7 +21,7 @@ function renderPlants(plants) {
     }
 
     // Show up to 9 plants
-    plants.slice(0, 3).forEach(plant => {
+    plants.slice(0, 9).forEach(plant => {
         
         const card = document.createElement('div');
         card.className = "w-full bg-white p-3 rounded-md shadow-md flex flex-col";
